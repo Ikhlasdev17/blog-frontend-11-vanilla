@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/app.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.5.0/toastify.js"
+    integrity="sha512-0M1OKuNQKhBhA/vqxH7OaS1LZlDwSrSbL3QzcmrlNbkWV0U4ewn8SWfVuRS5nLGV9IXsuNnkdqzyXOYXc0Eo9w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.5.0/toastify.css"
+    integrity="sha512-1xBbDQd2ydreJtocowqI+QS+xYVYdv96rB4xu/Peb5uD3SEtCJkGjnMCV3m8oH7XW35KsjqcTR6AytS5H8h8NA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class='header'>
+    <h1 class='logo'>Funny <span>Blog</span></h1>
+    <div class='header-right'>
+      <button id='add-post-toggler' class='btn add-post'><ion-icon name="add-circle-outline"></ion-icon></button>
+      <button id='logout' class='btn'>Logout</button>
+    </div>
+  </header>
+
+  <!-- main -->
+  <section class='main-wrapper'>
+    <div class="posts">
+      <h1 class='title'>Recent posts</h1>
+
+      <div id="posts-container"></div>
+    </div>
+    <div id='post-form' class="post-form">
+      <h1 class="title">Add post</h1>
+
+      <form class='add-post-form' id='add-post-form'>
+        <input id='title' type="title" placeholder='Enter post title:'>
+        <textarea id='description' placeholder='Description'></textarea>
+        <input id='cover' type="text" placeholder='Post cover'>
+        <button class='btn'>Save</button>
+      </form>
+    </div>
+  </section>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src='./js/app.js'></script>
+  <script src='./js/auth.js'></script>
+</body>
+
+</html>
